@@ -1,0 +1,22 @@
+{
+  "name": "pf03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^4.0.3"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2"
+  }
+}
