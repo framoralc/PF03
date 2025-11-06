@@ -1,4 +1,4 @@
-name: test mi-calculadora-basica-tdd
+name: test fibonacci esPinValido
 on:
   push:
     branches: [develop]
