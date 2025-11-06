@@ -1,7 +1,6 @@
 function fibonacci(n) {
-    if (n == 0) return 0;
-    if (n == 1) return 1;
-    
+    if(n < 2 && n > -1) return n;
+
     let a = 0, b = 1;
     for (let i = 2; i < n; i++) {
         let temp = a + b;
@@ -12,15 +11,11 @@ function fibonacci(n) {
 }
 
 function esPinValido(pin) {
-    if (pin == undefined || pin == null) {
+    if (pin == undefined || pin == null || pin.length < 4 || pin.length > 6) {
         return false;
     }
     
-    if (pin.length < 4 || pin.length > 6) {
-        return false;
-    }
-    
-       for (let i = 0; i < pin.length; i++) {
+    for (let i = 0; i < pin.length; i++) {
         const char = pin[i];
         if (char < '0' || char > '9') {
             return false;
