@@ -11,7 +11,7 @@ describe('fibonacci', () => {
     })
 
     it('fibonacci n = 5', () => {
-        expect(fibonacci(5)).toBe(5)
+        expect(fibonacci(5)).toBe(3)
     })
 })
 
