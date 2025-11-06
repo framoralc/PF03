@@ -1,0 +1,7 @@
+function fibonacci() {
+
+}
+
+function esPinValido(){
+    
+}
