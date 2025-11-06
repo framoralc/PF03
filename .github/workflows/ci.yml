@@ -1,4 +1,4 @@
-name: test mi-calculadora-basica-tdd
+name: test fibonacci esPinValido
 on:
   push:
     branches: [develop]
@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-      - uses: actions/chackout@v4
+        uses: actions/checkout@v4
 
       - name: Use Node.js 20
-      - uses: actions/setup-node@v4
-      with: 
-        node-version: '20'
-        cache: 'npm'
+        uses: actions/setup-node@v4
+        with: 
+          node-version: '20'
+          cache: 'npm'
 
       - name: install dependencies (lockfile)
         run: npm ci
